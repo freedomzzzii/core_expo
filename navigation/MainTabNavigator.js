@@ -8,20 +8,20 @@ import LinksScreen from '../screens/LinksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 
 const config = Platform.select({
-  web: { headerMode: 'screen' },
-  default: {},
+  'web': { 'headerMode': 'screen' },
+  'default': {},
 });
 
 const HomeStack = createStackNavigator(
   {
-    Home: HomeScreen,
+    'Home': HomeScreen,
   },
-  config
+  config,
 );
 
 HomeStack.navigationOptions = {
-  tabBarLabel: 'Home',
-  tabBarIcon: ({ focused }) => (
+  'tabBarLabel': 'Home',
+  'tabBarIcon': ({ focused }) => (
     <TabBarIcon
       focused={focused}
       name={
@@ -37,14 +37,14 @@ HomeStack.path = '';
 
 const LinksStack = createStackNavigator(
   {
-    Links: LinksScreen,
+    'Links': LinksScreen,
   },
-  config
+  config,
 );
 
 LinksStack.navigationOptions = {
-  tabBarLabel: 'Links',
-  tabBarIcon: ({ focused }) => (
+  'tabBarLabel': 'Links',
+  'tabBarIcon': ({ focused }) => (
     <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-link' : 'md-link'} />
   ),
 };
@@ -53,14 +53,14 @@ LinksStack.path = '';
 
 const SettingsStack = createStackNavigator(
   {
-    Settings: SettingsScreen,
+    'Settings': SettingsScreen,
   },
-  config
+  config,
 );
 
 SettingsStack.navigationOptions = {
-  tabBarLabel: 'Settings',
-  tabBarIcon: ({ focused }) => (
+  'tabBarLabel': 'Settings',
+  'tabBarIcon': ({ focused }) => (
     <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-options' : 'md-options'} />
   ),
 };
