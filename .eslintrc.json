@@ -6,7 +6,7 @@
     "mocha": true,
     "react-native/react-native": true
   },
-  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:react-native/all"],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
@@ -52,6 +52,7 @@
     "quotes": [2, "single", { "avoidEscape": true }],
     "quote-props": ["error", "always"],
     "jsx-quotes": ["error", "prefer-double"],
+    "object-shorthand": ["error", "always", { "ignoreConstructors": true }],
     "indent": ["error", 2, {
       "SwitchCase": 1,
       "VariableDeclarator": "first",
@@ -86,6 +87,7 @@
     "react-native/split-platform-components": 2,
     "react-native/no-inline-styles": 2,
     "react-native/no-color-literals": 2,
+    "react-native/no-raw-text": 0,
     "react-native/no-single-element-style-arrays": 2
   }
 }
