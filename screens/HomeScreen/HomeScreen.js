@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 
-import { LightText, RegularText, MediumText, SemiBoldText } from '../helpers';
+import { LightText, RegularText, MediumText, SemiBoldText, Icons } from '../../helpers';
 
 export default function HomeScreen() {
   return (
@@ -10,6 +10,7 @@ export default function HomeScreen() {
       <RegularText>Anim deserunt consequat aliqua laborum et adipisicing excepteur tempor sint ex ut.</RegularText>
       <MediumText>Anim deserunt consequat aliqua laborum et adipisicing excepteur tempor sint ex ut.</MediumText>
       <SemiBoldText>Anim deserunt consequat aliqua laborum et adipisicing excepteur tempor sint ex ut.</SemiBoldText>
+      <Icons name="glass" size={10} style={{ color: 'red' }} />
     </View>
   );
 }
